@@ -1,2 +1,8 @@
 # college-erp
-liveDemo : https://srm-erp.netlify.app/
+to sart front end
+go to client >do npm install
+npm start
+
+to start backend 
+go to server > 
+node server.js

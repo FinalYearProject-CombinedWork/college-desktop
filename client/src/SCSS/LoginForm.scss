@@ -1,0 +1,145 @@
+.LoginForm {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background-color: #1e6f5c;
+  .LeftConatiner {
+    display: flex;
+    flex: 0.5;
+    // width: 40vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1350px;
+    .Logo {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin: 1rem;
+      img {
+        margin: 0 0.7rem;
+        height: 40px;
+      }
+      h2 {
+        color: #c9c9c9;
+        font-size: 1.5rem;
+      }
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 3.5rem;
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .groupButttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      .Buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #1b8892;
+        border-radius: 3px;
+        padding: 12px 2rem;
+        margin: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        &:hover {
+          background-color: #eeeeee;
+          border: 1px solid #00c1d4;
+        }
+        img {
+          width: 150px;
+        }
+        h2 {
+          margin: 1rem 0;
+        }
+      }
+      .Login {
+        background-color: #00c1d4;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        color: #fff;
+        &:hover {
+          background-color: #2adbeb;
+          color: #000;
+        }
+      }
+    }
+  }
+  .RightConatiner {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+    align-items: center;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    .Form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 2rem;
+      h2 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 3rem;
+        margin-top: 3rem;
+      }
+      .InputFields {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+        margin-top: 5rem;
+        // max-width: 500px;
+        .Headings {
+          color: #afafae;
+          margin: 1.2rem 0;
+        }
+        input {
+          width: 100%;
+          // min-width: 300px;
+          // max-width: 500px;
+        }
+        .LoginButton {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3px;
+          width: 90%;
+          margin: auto;
+          margin-top: 2rem;
+          p {
+            align-items: center;
+            padding-top: 12px;
+            font-size: x-large;
+            color: #fff;
+            letter-spacing: 0.4rem;
+          }
+        }
+      }
+      .FcaultyButton {
+        background-color: #00917c;
+      }
+      .StudentButton {
+        background-color: #440a67;
+      }
+      .AdminButton {
+        background-color: #3a6351;
+      }
+      .HideButton {
+        display: none;
+      }
+    }
+  }
+}

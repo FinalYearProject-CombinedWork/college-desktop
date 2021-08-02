@@ -1,0 +1,87 @@
+.container-fluid {
+  // background: url("./Images/pexels-cottonbro-4778611.jpg") center/cover
+  //   no-repeat fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.admin-Button {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  a {
+    color: #000;
+  }
+}
+
+#trail {
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Faculty,
+.Student {
+  min-width: 400px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.Faculty__Heading,
+.Student__Heading,
+.Admin__Heading {
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.4rem;
+  font-weight: 700;
+}
+
+.Label {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.Button {
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  height: 50px;
+  &:hover {
+    background-color: #215faf;
+    color: #fff;
+  }
+}
+
+a {
+  color: #2792a0;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+//  ADMIN LOGIN page
+
+.ADMIN {
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.ADMIN__container {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  &__FORM {
+    border: 2px solid #acadad;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    min-width: 350px;
+    max-width: 500px;
+  }
+}

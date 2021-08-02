@@ -4,7 +4,12 @@ import { useHistory, Link } from "react-router-dom";
 import { facultyLogin } from "../redux/action/facultyAction";
 import { studentLogin } from "../redux/action/studentAction";
 import classnames from "classnames";
+<<<<<<< Updated upstream
 import "../SCSS/LoginPage.scss";
+=======
+
+// import '../Style/facultyStudentLogin.css'
+>>>>>>> Stashed changes
 
 const FacultyStudentLoginPags = () => {
   const store = useSelector((state) => state);
@@ -86,6 +91,7 @@ const FacultyStudentLoginPags = () => {
   }, [store.errorHelper, store.student.isAuthenticated]);
 
   return (
+<<<<<<< Updated upstream
     <div className="container-fluid LoginPage">
       <div className="row " id="trail">
         <div className="col-md-6 ">
@@ -105,6 +111,33 @@ const FacultyStudentLoginPags = () => {
                     <label className="Label" htmlFor="facRegId">
                       Registration Number
                     </label>
+=======
+    <div className="container-fluid">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="row" id="trail">
+        <div className="col-md-6">
+          <div className="row m-5">
+            <div
+              className="col-md-8 m-auto border"
+              style={{
+                backgroundColor: "white",
+                borderRadius: "1.2rem",
+                padding: "1rem 1rem 0rem 1rem",
+              }}
+            >
+              <div>
+                <h3 className="text-center ">FACULTY</h3>
+                <form noValidate onSubmit={facultyFormHandler}>
+                  <div className="form-group">
+                    <label htmlFor="facRegId">Registration Number</label>
+>>>>>>> Stashed changes
                     <input
                       onChange={(e) => setFacultyRegNum(e.target.value)}
                       type="text"
@@ -121,9 +154,13 @@ const FacultyStudentLoginPags = () => {
                     )}
                   </div>
                   <div className="form-group">
+<<<<<<< Updated upstream
                     <label className="Label" htmlFor="passwordFacId">
                       Password
                     </label>
+=======
+                    <label htmlFor="passwordFacId">Password</label>
+>>>>>>> Stashed changes
                     <input
                       onChange={(e) => setFacultyPassword(e.target.value)}
                       value={facultyPassword}
@@ -137,7 +174,11 @@ const FacultyStudentLoginPags = () => {
                       <div className="invalid-feedback">{errors.password}</div>
                     )}
                   </div>
+<<<<<<< Updated upstream
                   <div class="row justify-content-center text-center">
+=======
+                  <div class="row justify-content-center">
+>>>>>>> Stashed changes
                     <div class="col-md-1">
                       {isFacultyLoading && (
                         <div class="spinner-border text-primary" role="status">
@@ -148,7 +189,11 @@ const FacultyStudentLoginPags = () => {
                   </div>
 
                   {!isFacultyLoading && (
+<<<<<<< Updated upstream
                     <button type="submit" className="btn Button btn-block">
+=======
+                    <button type="submit" className="btn btn-info btn-block">
+>>>>>>> Stashed changes
                       Login
                     </button>
                   )}
@@ -163,6 +208,7 @@ const FacultyStudentLoginPags = () => {
           </div>
         </div>
         <div className="col-md-6">
+<<<<<<< Updated upstream
           <div className="row Student">
             <div
               className="col-md-9 m-auto border"
@@ -179,6 +225,22 @@ const FacultyStudentLoginPags = () => {
                     <label className="Label" htmlFor="studentId">
                       Registration Number
                     </label>
+=======
+          <div className="row m-5">
+            <div
+              className="col-md-8 m-auto border"
+              style={{
+                backgroundColor: "white",
+                borderRadius: "1.2rem",
+                padding: "1rem 1rem 0rem 1rem",
+              }}
+            >
+              <div>
+                <h3 className="text-center">STUDENT</h3>
+                <form noValidate onSubmit={studentFormHandler}>
+                  <div className="form-group">
+                    <label htmlFor="studentId">Registration Number</label>
+>>>>>>> Stashed changes
                     <input
                       onChange={(e) => setStudentRegNum(e.target.value)}
                       type="text"
@@ -195,9 +257,13 @@ const FacultyStudentLoginPags = () => {
                     )}
                   </div>
                   <div className="form-group">
+<<<<<<< Updated upstream
                     <label className="Label" htmlFor="passwordId">
                       Password
                     </label>
+=======
+                    <label htmlFor="passwordId">Password</label>
+>>>>>>> Stashed changes
                     <input
                       onChange={(e) => setStudentPassword(e.target.value)}
                       value={studentPassword}
@@ -223,12 +289,20 @@ const FacultyStudentLoginPags = () => {
                     </div>
                   </div>
                   {!isStudentLoading && (
+<<<<<<< Updated upstream
                     <button type="submit" className="btn btn-block Button ">
+=======
+                    <button type="submit" className="btn btn-info btn-block ">
+>>>>>>> Stashed changes
                       Login
                     </button>
                   )}
                 </form>
+<<<<<<< Updated upstream
                 <p className="text-center mt-2">
+=======
+                <p className="text-center">
+>>>>>>> Stashed changes
                   <Link className="text-center" to="/forgotPassword/student">
                     Forgot Password
                   </Link>
@@ -237,10 +311,18 @@ const FacultyStudentLoginPags = () => {
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
         <button
           type="button"
           class="btn btn-warning ml-auto mr-auto admin-Button"
         >
+=======
+        <br />
+        <br />
+        <br />
+        <br />
+        <button type="button" class="btn btn-warning ml-auto mr-auto">
+>>>>>>> Stashed changes
           <Link className="text-center" to="/adminlogin">
             Admin
           </Link>

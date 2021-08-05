@@ -7,11 +7,11 @@ import "../SCSS/SideBar.scss";
 
 //  ICONS IMPORTS
 import HomeIcon from "@material-ui/icons/Home";
-import PersonAddIcon from "@material-ui/icons/PersonAdd";
-import GroupAddIcon from "@material-ui/icons/GroupAdd";
-import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
-import PostAddIcon from "@material-ui/icons/PostAdd";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import UpdateIcon from "@material-ui/icons/Update";
+import DoneIcon from "@material-ui/icons/Done";
+import TurnedInIcon from "@material-ui/icons/TurnedIn";
+import VpnKeyIcon from "@material-ui/icons/VpnKey";
 
 const Home = ({ SetHide }) => {
   const store = useSelector((store) => store);
@@ -29,7 +29,7 @@ const Home = ({ SetHide }) => {
     history.push("/");
   };
   return (
-    <div className="SideBar">
+    <div className="SideBar FacNAV">
       <nav className="NavBar">
         <div className="MianLogo">
           <Link className="LogoLink" to="/admin">
@@ -52,8 +52,8 @@ const Home = ({ SetHide }) => {
             {store.faculty.faculty.faculty.registrationNumber}
           </Link>
         </h5>
-        <h6>Admin</h6>
-        <ul className="NavMenu">
+        <h6>Faculty</h6>
+        <ul className="NavMenu FacUL">
           <Link
             to="/home"
             className={
@@ -84,7 +84,7 @@ const Home = ({ SetHide }) => {
             }}
           >
             <li className="active NavMenu__Link__Li">
-              <PersonAddIcon />
+              <UpdateIcon />
               <p>Update Profile</p>
             </li>
           </Link>
@@ -101,7 +101,7 @@ const Home = ({ SetHide }) => {
             }}
           >
             <li className="active NavMenu__Link__Li">
-              <GroupAddIcon />
+              <DoneIcon />
               <p>Mark Attendence</p>
             </li>
           </Link>
@@ -118,7 +118,7 @@ const Home = ({ SetHide }) => {
             }}
           >
             <li className="active NavMenu__Link__Li">
-              <SupervisorAccountIcon />
+              <TurnedInIcon />
               <p>Upload Marks</p>
             </li>
           </Link>
@@ -135,7 +135,7 @@ const Home = ({ SetHide }) => {
             }}
           >
             <li className="active NavMenu__Link__Li">
-              <PostAddIcon />
+              <VpnKeyIcon />
               <p>Update PassWord</p>
             </li>
           </Link>

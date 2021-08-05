@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1350px;
+    // max-width: 1350px;
     .Logo {
       display: flex;
       width: 100%;
@@ -23,8 +23,8 @@
         height: 40px;
       }
       h2 {
-        color: #c9c9c9;
-        font-size: 1.5rem;
+        color: #eeeeee;
+        font-size: 1.7rem;
       }
     }
     h1 {
@@ -119,12 +119,13 @@
           width: 90%;
           margin: auto;
           margin-top: 2rem;
+          cursor: pointer;
           p {
             align-items: center;
             padding-top: 12px;
             font-size: x-large;
             color: #fff;
-            letter-spacing: 0.4rem;
+            letter-spacing: 0.3rem;
           }
         }
       }

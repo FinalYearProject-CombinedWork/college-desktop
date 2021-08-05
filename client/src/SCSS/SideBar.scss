@@ -1,0 +1,282 @@
+a {
+  color: #000 !important;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+  li {
+    list-style: none;
+    text-decoration: none;
+  }
+}
+
+.TopNav {
+  position: absolute;
+  z-index: 99;
+  top: 0px;
+  width: 100vw;
+  // height: 200px;
+  // height: 100%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+
+  .LogoLink {
+    font-size: 1.5rem;
+    img {
+      width: 40px;
+    }
+  }
+  svg {
+    background-color: #ff000d;
+    // border: 1px solid #000;
+    border-radius: 5px;
+    z-index: 1000;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    // padding: 15px;
+    &:hover {
+      background-color: #000;
+    }
+  }
+}
+
+.SideBar {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  display: flex;
+  // overflow-y: scroll;
+  min-width: 450px;
+  min-width: 320px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  .NavBar {
+    display: flex;
+    flex-direction: column;
+    .MianLogo {
+      .LogoLink {
+        font-size: 1.7rem;
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+        justify-content: flex-start;
+        img {
+          justify-content: flex-start;
+          width: 40px;
+          margin: 10px;
+        }
+      }
+    }
+    .ProfilePic {
+      display: flex;
+      align-items: center;
+      // flex-direction: column;
+      margin: 1.5rem;
+      overflow: hidden;
+      border-radius: 50%;
+      cursor: pointer;
+      // margin-left: 2rem;
+      img {
+        width: 140px;
+        height: 140px;
+        object-fit: contain;
+      }
+    }
+    .NameTitle {
+      align-self: center;
+      a {
+        color: #4210cc !important;
+      }
+    }
+    h5 {
+      text-align: center;
+      &:hover {
+        color: #ff000d !important;
+      }
+    }
+    h6 {
+      padding: 0.3rem 1rem;
+      align-self: center;
+      background-color: #f5851c;
+      color: #fff;
+      border-radius: 2rem;
+    }
+  }
+}
+
+.NavMenu {
+  display: flex;
+  flex-direction: column;
+  // width: 100%;
+  border-radius: 10px;
+  background-color: #350ea115;
+  padding: 0.7rem;
+  margin: 1rem -70px;
+
+  &__Link {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0;
+    background-color: #bb1cfa1a;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    &__Li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        color: #511281;
+      }
+      p {
+        margin: 0 10px;
+        color: #000;
+        font-size: 1.25rem;
+      }
+    }
+    &:hover {
+      background-color: #fff;
+      // .NavMenu__Link__Li {
+      //   p {
+      //     color: #000 !important;
+      //   }
+      // }
+    }
+  }
+  // &__Active {
+  //   background-color: #00ead3;
+  // }
+}
+
+.LogoutButton {
+  background-color: #ff000d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  border-radius: 3px;
+  padding: 0.3rem;
+  svg {
+    color: #fff;
+    margin: 0.5rem;
+  }
+  p {
+    align-items: center;
+    margin: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
+  &:hover {
+    background-color: #000;
+    svg {
+      color: #ff000d;
+    }
+  }
+}
+// .HelperContainer::-webkit-scrollbar {
+//   display: none;
+// }
+
+.HelperContainer {
+  flex: 0.3;
+  // backgroundColor: "#000",
+  // position: fixed;
+  height: 100vh;
+  max-width: 450px;
+  min-width: 320px;
+  background-color: #feffe7;
+  border-right: 3px solid #bfcc10;
+  border-top-right-radius: 20px;
+  // border-bottom-right-radius: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media (max-width: 1500px) {
+  .NavMenu {
+    margin: 1rem -70px;
+  }
+}
+@media (max-width: 1200px) {
+  .NavMenu {
+    margin: 1rem -60px;
+  }
+}
+@media (max-width: 750px) {
+  .HelperContainer {
+    display: none;
+  }
+  .TopNav {
+    display: flex;
+  }
+  .ShowNav {
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    transition: all 1s ease-in-out;
+    right: 100%;
+    transform: translateX(100%);
+  }
+}
+
+.StuSB {
+  background-color: #512d6d;
+}
+
+.NavUL {
+  li {
+    display: flex;
+    align-items: center;
+    button {
+      cursor: pointer;
+      margin: auto 3px;
+      a {
+        color: #fff !important;
+      }
+      &:hover {
+        border: 1px solid #ff000d;
+      }
+    }
+  }
+}
+
+.LogoutBTN {
+  background-color: #ff222d;
+  color: #fff;
+}
+
+.DropDown {
+  a {
+    color: #fff !important;
+  }
+}
+
+.dropdown-menu {
+  a {
+    color: #000 !important;
+    &:hover {
+      background-color: #4210cc36;
+    }
+  }
+}
+
+.ToggelButton {
+  background-color: #fff !important;
+  color: #000 !important;
+  span {
+    color: #fff !important;
+  }
+}

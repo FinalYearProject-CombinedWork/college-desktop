@@ -3,18 +3,17 @@ import ReactDOM from "react-dom";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 
 // ====== SCSS =========
 import "./SCSS/Admin.scss";
 import "./SCSS/LoginPage.scss";
-import "./SCSS/Faculty.scss";
-import "./SCSS/Student.scss";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
+  <Provider store={store}>
+    <BrowserRouter>
       <App />
-    </Provider>
-  </React.StrictMode>,
+    </BrowserRouter>
+  </Provider>,
   document.getElementById("root")
 );

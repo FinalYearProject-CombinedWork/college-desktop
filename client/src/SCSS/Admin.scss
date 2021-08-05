@@ -3,3 +3,52 @@
   flex-direction: row;
   width: 100vw;
 }
+.MainContainer {
+  display: flex;
+}
+.Home {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  h3 {
+    // width: 100vw;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+}
+.AddSubjects {
+  height: 100% !important;
+}
+
+.Title {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+@media (max-width: 1000px) {
+  .Home {
+    flex: 1;
+    .HomeMain {
+      &__Section {
+        &__Div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .FacultyHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Imagecard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+}
